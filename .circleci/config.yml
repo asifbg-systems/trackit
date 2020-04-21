@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: /go/src/github.com/trackit/trackit
+    working_directory: /go/src/github.com/asifbg-systems/trackit
     docker:
       - image: msolution/trackit2-circleci
     steps:
@@ -18,7 +18,7 @@ jobs:
             cd server/
             ./buildstatic.sh
   build-and-push:
-    working_directory: /go/src/github.com/trackit/trackit
+    working_directory: /go/src/github.com/asifbg-systems/trackit
     docker:
       - image: msolution/trackit2-circleci
     steps:
