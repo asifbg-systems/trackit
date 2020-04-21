@@ -115,7 +115,7 @@ func createForgottenPasswordEntry(request *http.Request, body forgottenPasswordR
 	logger := jsonlog.LoggerFromContextOrDefault(request.Context())
 	//token := uuid.NewV1().String()
 	u,_ := uuid.NewV1()
-	token := u.String()
+	token = u.String()
 	tokenHash, err := getPasswordHash(token)
 	if err != nil {
 		logger.Error("Failed to create token hash.", err.Error())
