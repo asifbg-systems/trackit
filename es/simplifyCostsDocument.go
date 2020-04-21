@@ -78,11 +78,11 @@ var (
 
 func SimplifyCostsDocument(ctx context.Context, sr *elastic.SearchResult) (SimplifiedCostsDocument, error) {
 	var scdz SimplifiedCostsDocument
-	sr.
+	var rm *json.RawMessage
 	if len(sr.Aggregations) == 1 {
 		for k, v := range sr.Aggregations {
 			if v != nil {
-				return simplifyCostsDocumentWithSingleAggregation(ctx, k, sr.Aggregations)
+				return simplifyCostsDocumentWithSingleAggregation(ctx, k, rm)
 
 			}
 		}
