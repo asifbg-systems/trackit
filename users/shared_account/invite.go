@@ -110,7 +110,9 @@ func addAccountToGuest(ctx context.Context, db *sql.Tx, accountId int, permissio
 func createAccountForGuest(ctx context.Context, db *sql.Tx, body InviteUserRequest, accountId int) (int, models.SharedAccount, error) {
 	logger := jsonlog.LoggerFromContextOrDefault(ctx)
 	var sharedAccount models.SharedAccount
-	tempPassword := uuid.NewV1().String()
+
+	u,_ := uuid.NewV1()
+	tempPassword := u.String()
 	usr, err := users.CreateUserWithPassword(ctx, db, body.Email, tempPassword, "")
 	if err == nil {
 		sharedAccount, err = addAccountToGuest(ctx, db, accountId, body.PermissionLevel, usr.Id)
@@ -130,7 +132,9 @@ func createAccountForGuest(ctx context.Context, db *sql.Tx, body InviteUserReque
 func resetPasswordGenerator(ctx context.Context, tx *sql.Tx, newUserId int) (models.ForgottenPassword, string, error) {
 	var dbForgottenPassword models.ForgottenPassword
 	logger := jsonlog.LoggerFromContextOrDefault(ctx)
-	token := uuid.NewV1().String()
+
+	u,_ := uuid.NewV1()
+	token := u.String()
 	tokenHash, err := getPasswordHash(token)
 	if err != nil {
 		logger.Error("Failed to create token hash.", err.Error())
