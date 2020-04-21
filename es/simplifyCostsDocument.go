@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	"github.com/olivere/elastic"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 )
 
 // SimplifiedCostsDocument contains the data necessary to show a clean version

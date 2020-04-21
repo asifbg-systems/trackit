@@ -22,7 +22,7 @@ import (
 	"testing"
 	"testing/quick"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 )
 
 type basicLogMessage struct {

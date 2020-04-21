@@ -19,7 +19,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/trackit/trackit/config"
+	"github.com/asifbg-systems/trackit/config"
 )
 
 func init() {

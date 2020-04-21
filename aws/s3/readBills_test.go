@@ -18,9 +18,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	taws "github.com/trackit/trackit/aws"
+	taws "github.com/asifbg-systems/trackit/aws"
 )
 
 func init() {

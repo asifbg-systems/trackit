@@ -23,12 +23,12 @@ import (
 	"strings"
 
 	"github.com/olivere/elastic"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	tes "github.com/trackit/trackit/aws/usageReports/es"
-	terrors "github.com/trackit/trackit/errors"
-	"github.com/trackit/trackit/es"
-	"github.com/trackit/trackit/users"
+	tes "github.com/asifbg-systems/trackit/aws/usageReports/es"
+	terrors "github.com/asifbg-systems/trackit/errors"
+	"github.com/asifbg-systems/trackit/es"
+	"github.com/asifbg-systems/trackit/users"
 )
 
 // makeElasticSearchRequest prepares and run an ES request

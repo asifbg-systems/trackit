@@ -23,13 +23,13 @@ import (
 	"time"
 
 	"github.com/olivere/elastic"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/anomaliesDetection"
-	"github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/cache"
-	"github.com/trackit/trackit/db"
-	"github.com/trackit/trackit/models"
+	"github.com/asifbg-systems/trackit/anomaliesDetection"
+	"github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/cache"
+	"github.com/asifbg-systems/trackit/db"
+	"github.com/asifbg-systems/trackit/models"
 )
 
 // taskAnomaliesDetection processes an AwsAccount to email

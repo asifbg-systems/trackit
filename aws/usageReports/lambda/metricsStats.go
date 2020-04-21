@@ -22,9 +22,9 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
 	"github.com/aws/aws-sdk-go/service/lambda"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws/usageReports"
+	"github.com/asifbg-systems/trackit/aws/usageReports"
 )
 
 // getFunctionTag formats []*lambda.Tag to map[string]string

@@ -21,9 +21,9 @@ import (
 	"net"
 	"net/smtp"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/config"
+	"github.com/asifbg-systems/trackit/config"
 )
 
 // Mail contains the data necessary to send a mail.

@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 )
 
 // contextKey is an unexported type to avoid collisions in context.Context

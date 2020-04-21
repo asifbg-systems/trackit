@@ -23,8 +23,8 @@ import (
 
 	"github.com/olivere/elastic"
 
-	"github.com/trackit/jsonlog"
-	"github.com/trackit/trackit/errors"
+	"github.com/asifbg-systems/jsonlog"
+	"github.com/asifbg-systems/trackit/errors"
 )
 
 // PricePoint struct stores elements for cost differentiator

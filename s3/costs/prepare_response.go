@@ -21,8 +21,8 @@ import (
 
 	"github.com/olivere/elastic"
 
-	"github.com/trackit/jsonlog"
-	"github.com/trackit/trackit/errors"
+	"github.com/asifbg-systems/jsonlog"
+	"github.com/asifbg-systems/trackit/errors"
 )
 
 // S3BucketCost represents the detail of the costs for a given bucket

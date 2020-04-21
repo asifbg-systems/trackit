@@ -21,10 +21,10 @@ import (
 	"time"
 
 	"github.com/360EntSecGroup-Skylar/excelize"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/config"
+	"github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/config"
 )
 
 const templateSheetName = "Introduction"

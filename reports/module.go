@@ -21,7 +21,7 @@ import (
 
 	"github.com/360EntSecGroup-Skylar/excelize"
 
-	"github.com/trackit/trackit/aws"
+	"github.com/asifbg-systems/trackit/aws"
 )
 
 type module struct {

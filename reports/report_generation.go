@@ -20,10 +20,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/db"
+	"github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/db"
 )
 
 // GenerateReport will generate a spreadsheet report for a given AWS account and for a given month

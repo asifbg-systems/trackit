@@ -20,12 +20,12 @@ import (
 	"time"
 
 	"github.com/olivere/elastic"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	taws "github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/aws/s3"
-	"github.com/trackit/trackit/aws/usageReports"
-	"github.com/trackit/trackit/es"
+	taws "github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/aws/s3"
+	"github.com/asifbg-systems/trackit/aws/usageReports"
+	"github.com/asifbg-systems/trackit/es"
 )
 
 type (

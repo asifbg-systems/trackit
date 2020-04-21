@@ -20,8 +20,8 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/olivere/elastic"
-	"github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/users"
+	"github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/users"
 )
 
 // AccountPlugin is the struct that defines the variables and functions a plugin

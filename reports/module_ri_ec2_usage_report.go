@@ -21,12 +21,12 @@ import (
 	"time"
 
 	"github.com/360EntSecGroup-Skylar/excelize"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/aws/usageReports/history"
-	"github.com/trackit/trackit/usageReports/riEc2"
-	"github.com/trackit/trackit/users"
+	"github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/aws/usageReports/history"
+	"github.com/asifbg-systems/trackit/usageReports/riEc2"
+	"github.com/asifbg-systems/trackit/users"
 )
 
 const riEc2ReportSheetName = "Reserved Instance EC2 Report"

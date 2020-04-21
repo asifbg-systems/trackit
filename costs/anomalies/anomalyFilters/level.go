@@ -1,7 +1,7 @@
 package anomalyFilters
 
 import (
-	"github.com/trackit/trackit/costs/anomalies/anomalyType"
+	"github.com/asifbg-systems/trackit/costs/anomalies/anomalyType"
 )
 
 type (

@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"time"
 
-	ts3 "github.com/trackit/trackit/aws/s3"
-	"github.com/trackit/trackit/es"
-	core "github.com/trackit/trackit/plugins/account/core"
-	utils "github.com/trackit/trackit/plugins/utils"
+	ts3 "github.com/asifbg-systems/trackit/aws/s3"
+	"github.com/asifbg-systems/trackit/es"
+	core "github.com/asifbg-systems/trackit/plugins/account/core"
+	utils "github.com/asifbg-systems/trackit/plugins/utils"
 )
 
 func init() {

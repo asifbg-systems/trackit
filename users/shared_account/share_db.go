@@ -19,9 +19,9 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/models"
+	"github.com/asifbg-systems/trackit/models"
 )
 
 type SharedResults struct {

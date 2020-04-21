@@ -19,7 +19,7 @@ import (
 
 	"github.com/olivere/elastic"
 
-	"github.com/trackit/trackit/config"
+	"github.com/asifbg-systems/trackit/config"
 )
 
 const (

@@ -24,13 +24,13 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/costexplorer"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	taws "github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/aws/usageReports"
-	"github.com/trackit/trackit/db"
-	"github.com/trackit/trackit/usageReports/ec2"
-	"github.com/trackit/trackit/users"
+	taws "github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/aws/usageReports"
+	"github.com/asifbg-systems/trackit/db"
+	"github.com/asifbg-systems/trackit/usageReports/ec2"
+	"github.com/asifbg-systems/trackit/users"
 )
 
 // geEc2CoverageReport get EC2 coverage data from the AWS Cost Explorer

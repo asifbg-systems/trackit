@@ -23,10 +23,10 @@ import (
 	"time"
 
 	"github.com/olivere/elastic"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	terrors "github.com/trackit/trackit/errors"
-	"github.com/trackit/trackit/es"
+	terrors "github.com/asifbg-systems/trackit/errors"
+	"github.com/asifbg-systems/trackit/es"
 )
 
 const maxAggregationSize = 0x7FFFFFFF

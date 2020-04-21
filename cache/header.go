@@ -17,7 +17,7 @@ package cache
 import (
 	"net/http"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 )
 
 // The different statuses below correspond to the cache status for a specified key.

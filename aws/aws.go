@@ -23,11 +23,11 @@ import (
 	"strings"
 
 	"github.com/aws/aws-sdk-go/service/sts"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/awsSession"
-	"github.com/trackit/trackit/models"
-	"github.com/trackit/trackit/users"
+	"github.com/asifbg-systems/trackit/awsSession"
+	"github.com/asifbg-systems/trackit/models"
+	"github.com/asifbg-systems/trackit/users"
 )
 
 // AwsAccount represents a client's AWS account.

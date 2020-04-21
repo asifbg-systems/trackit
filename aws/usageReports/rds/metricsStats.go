@@ -22,9 +22,9 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
 	"github.com/aws/aws-sdk-go/service/rds"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws/usageReports"
+	"github.com/asifbg-systems/trackit/aws/usageReports"
 )
 
 // getInstanceTags returns an array of tags associated to the RDS instance given as parameter

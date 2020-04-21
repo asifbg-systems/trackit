@@ -23,12 +23,12 @@ import (
 	"time"
 
 	"github.com/360EntSecGroup-Skylar/excelize"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/aws/usageReports/history"
-	"github.com/trackit/trackit/usageReports/lambda"
-	"github.com/trackit/trackit/users"
+	"github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/aws/usageReports/history"
+	"github.com/asifbg-systems/trackit/usageReports/lambda"
+	"github.com/asifbg-systems/trackit/users"
 )
 
 const lambdaUsageReportSheetName = "Lambda Usage Report"

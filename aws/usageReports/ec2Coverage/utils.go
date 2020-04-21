@@ -22,11 +22,11 @@ import (
 	"time"
 
 	"github.com/satori/go.uuid"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/aws/usageReports"
-	"github.com/trackit/trackit/es"
+	"github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/aws/usageReports"
+	"github.com/asifbg-systems/trackit/es"
 )
 
 type (

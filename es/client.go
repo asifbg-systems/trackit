@@ -24,10 +24,10 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds"
 	"github.com/olivere/elastic"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/awsSession"
-	"github.com/trackit/trackit/config"
+	"github.com/asifbg-systems/trackit/awsSession"
+	"github.com/asifbg-systems/trackit/config"
 )
 
 var Client *elastic.Client

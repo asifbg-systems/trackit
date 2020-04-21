@@ -20,7 +20,7 @@ import (
 
 	"github.com/olivere/elastic"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 )
 
 type bucket = map[string]interface{}

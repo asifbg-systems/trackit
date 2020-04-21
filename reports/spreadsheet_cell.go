@@ -17,7 +17,7 @@ package reports
 import (
 	"strings"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
 	"github.com/360EntSecGroup-Skylar/excelize"
 )

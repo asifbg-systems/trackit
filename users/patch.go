@@ -19,10 +19,10 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/trackit/jsonlog"
-	"github.com/trackit/trackit/db"
-	"github.com/trackit/trackit/models"
-	"github.com/trackit/trackit/routes"
+	"github.com/asifbg-systems/jsonlog"
+	"github.com/asifbg-systems/trackit/db"
+	"github.com/asifbg-systems/trackit/models"
+	"github.com/asifbg-systems/trackit/routes"
 )
 
 func patchUser(request *http.Request, a routes.Arguments) (int, interface{}) {

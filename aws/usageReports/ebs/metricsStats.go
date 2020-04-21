@@ -18,7 +18,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/ec2"
 
-	"github.com/trackit/trackit/aws/usageReports"
+	"github.com/asifbg-systems/trackit/aws/usageReports"
 )
 
 // getSnapshotTag formats []*ec2.Tag to map[string]string

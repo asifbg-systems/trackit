@@ -19,11 +19,11 @@ import (
 	"database/sql"
 	"encoding/json"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws/pricings"
-	"github.com/trackit/trackit/db"
-	"github.com/trackit/trackit/models"
+	"github.com/asifbg-systems/trackit/aws/pricings"
+	"github.com/asifbg-systems/trackit/db"
+	"github.com/asifbg-systems/trackit/models"
 )
 
 // taskFetchPricings fetches the EC2 pricings and saves them in the database

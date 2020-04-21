@@ -19,7 +19,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 )
 
 const (

@@ -19,9 +19,9 @@ import (
 
 	"github.com/aws/aws-sdk-go/service/ec2"
 
-	"github.com/trackit/trackit/config"
-	core "github.com/trackit/trackit/plugins/account/core"
-	utils "github.com/trackit/trackit/plugins/utils"
+	"github.com/asifbg-systems/trackit/config"
+	core "github.com/asifbg-systems/trackit/plugins/account/core"
+	utils "github.com/asifbg-systems/trackit/plugins/utils"
 )
 
 func init() {

@@ -1,10 +1,10 @@
 package shared_account
 
 import (
-	"github.com/trackit/trackit/routes"
+	"github.com/asifbg-systems/trackit/routes"
 	"net/http"
-	"github.com/trackit/trackit/db"
-	"github.com/trackit/trackit/users"
+	"github.com/asifbg-systems/trackit/db"
+	"github.com/asifbg-systems/trackit/users"
 	"encoding/json"
 )
 

@@ -22,9 +22,9 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/util/req"
+	"github.com/asifbg-systems/trackit/util/req"
 )
 
 type RequestBody struct {

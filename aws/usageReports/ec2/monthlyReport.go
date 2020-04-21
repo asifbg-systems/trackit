@@ -26,13 +26,13 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/ec2"
 	"github.com/olivere/elastic"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	taws "github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/aws/usageReports"
-	"github.com/trackit/trackit/config"
-	"github.com/trackit/trackit/errors"
-	"github.com/trackit/trackit/es"
+	taws "github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/aws/usageReports"
+	"github.com/asifbg-systems/trackit/config"
+	"github.com/asifbg-systems/trackit/errors"
+	"github.com/asifbg-systems/trackit/es"
 )
 
 // getElasticSearchEc2Instance prepares and run the request to retrieve the a report of an instance

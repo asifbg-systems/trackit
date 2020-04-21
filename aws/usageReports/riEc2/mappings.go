@@ -18,9 +18,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/es"
+	"github.com/asifbg-systems/trackit/es"
 )
 
 const TypeReservedInstancesReport = "ri-ec2-report"

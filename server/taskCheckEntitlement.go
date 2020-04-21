@@ -25,12 +25,12 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/service/marketplaceentitlementservice"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/awsSession"
-	"github.com/trackit/trackit/config"
-	"github.com/trackit/trackit/db"
-	"github.com/trackit/trackit/models"
+	"github.com/asifbg-systems/trackit/awsSession"
+	"github.com/asifbg-systems/trackit/config"
+	"github.com/asifbg-systems/trackit/db"
+	"github.com/asifbg-systems/trackit/models"
 )
 
 // taskCheckEntitlement checks the user Entitlement for AWS Marketplace users

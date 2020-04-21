@@ -28,12 +28,12 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	taws "github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/config"
-	"github.com/trackit/trackit/es"
-	"github.com/trackit/trackit/util/csv"
+	taws "github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/config"
+	"github.com/asifbg-systems/trackit/es"
+	"github.com/asifbg-systems/trackit/util/csv"
 )
 
 const (

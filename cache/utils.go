@@ -17,7 +17,7 @@ package cache
 import (
 	"encoding/json"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 )
 
 func userHasCacheForService(rdCache redisCache, logger jsonlog.Logger) bool {

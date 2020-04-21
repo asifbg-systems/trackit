@@ -22,11 +22,11 @@ import (
 	"strings"
 
 	"github.com/olivere/elastic"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws/usageReports"
-	"github.com/trackit/trackit/aws/usageReports/elasticache"
-	"github.com/trackit/trackit/errors"
+	"github.com/asifbg-systems/trackit/aws/usageReports"
+	"github.com/asifbg-systems/trackit/aws/usageReports/elasticache"
+	"github.com/asifbg-systems/trackit/errors"
 )
 
 type (

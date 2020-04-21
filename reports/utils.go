@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/trackit/trackit/aws"
+	"github.com/asifbg-systems/trackit/aws"
 )
 
 func mergeStringJson(style1 string, style2 string) (string, error) {

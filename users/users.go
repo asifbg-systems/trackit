@@ -21,8 +21,8 @@ import (
 	"encoding/base64"
 	"errors"
 
-	"github.com/trackit/jsonlog"
-	"github.com/trackit/trackit/models"
+	"github.com/asifbg-systems/jsonlog"
+	"github.com/asifbg-systems/trackit/models"
 )
 
 var (

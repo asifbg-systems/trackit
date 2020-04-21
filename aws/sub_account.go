@@ -22,8 +22,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/organizations"
 
-	"github.com/trackit/trackit/config"
-	"github.com/trackit/trackit/models"
+	"github.com/asifbg-systems/trackit/config"
+	"github.com/asifbg-systems/trackit/models"
 )
 
 func updateExistingAccount(ctx context.Context, aa AwsAccount, subs []AwsAccount, tx *sql.Tx) error {

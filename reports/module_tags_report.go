@@ -24,14 +24,14 @@ import (
 	"time"
 
 	"github.com/360EntSecGroup-Skylar/excelize"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/aws/s3"
-	"github.com/trackit/trackit/aws/usageReports/history"
-	"github.com/trackit/trackit/costs/tags"
-	"github.com/trackit/trackit/es"
-	"github.com/trackit/trackit/users"
+	"github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/aws/s3"
+	"github.com/asifbg-systems/trackit/aws/usageReports/history"
+	"github.com/asifbg-systems/trackit/costs/tags"
+	"github.com/asifbg-systems/trackit/es"
+	"github.com/asifbg-systems/trackit/users"
 )
 
 const tagsUsageReportSheetName = "Tags Report"

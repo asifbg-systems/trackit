@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 )
 
 func init() {

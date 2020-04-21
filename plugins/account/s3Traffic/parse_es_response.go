@@ -18,9 +18,9 @@ import (
 	"encoding/json"
 
 	"github.com/olivere/elastic"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	core "github.com/trackit/trackit/plugins/account/core"
+	core "github.com/asifbg-systems/trackit/plugins/account/core"
 )
 
 type bucketsInfos = map[string]float64

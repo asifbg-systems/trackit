@@ -22,12 +22,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/es"
-	"github.com/trackit/trackit/usageReports/ec2"
-	"github.com/trackit/trackit/usageReports/riEc2"
+	"github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/es"
+	"github.com/asifbg-systems/trackit/usageReports/ec2"
+	"github.com/asifbg-systems/trackit/usageReports/riEc2"
 )
 
 var (

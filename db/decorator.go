@@ -21,8 +21,8 @@ import (
 	"net/http"
 	"runtime/debug"
 
-	"github.com/trackit/jsonlog"
-	"github.com/trackit/trackit/routes"
+	"github.com/asifbg-systems/jsonlog"
+	"github.com/asifbg-systems/trackit/routes"
 )
 
 // Transaction is a decorator which manages a transaction for an HTTP request.

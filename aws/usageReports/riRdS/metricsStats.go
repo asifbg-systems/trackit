@@ -19,9 +19,9 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/rds"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws/usageReports"
+	"github.com/asifbg-systems/trackit/aws/usageReports"
 )
 
 //getInstanceTags returns an array of tags associated to the RDS reserved instance given as parameter

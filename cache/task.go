@@ -20,7 +20,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 )
 
 func getTotalRedisKeys() (totalKeys int64, err error) {

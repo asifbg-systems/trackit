@@ -23,11 +23,11 @@ import (
 	"time"
 
 	"github.com/360EntSecGroup-Skylar/excelize"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws"
-	"github.com/trackit/trackit/aws/usageReports/history"
-	"github.com/trackit/trackit/costs/diff"
+	"github.com/asifbg-systems/trackit/aws"
+	"github.com/asifbg-systems/trackit/aws/usageReports/history"
+	"github.com/asifbg-systems/trackit/costs/diff"
 )
 
 type (

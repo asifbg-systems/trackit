@@ -19,7 +19,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 )
 
 // requestLogData is the set of fields from an HTTP request that are logged

@@ -19,10 +19,10 @@ import (
 	"encoding/json"
 
 	"github.com/olivere/elastic"
-	"github.com/trackit/jsonlog"
+	"github.com/asifbg-systems/jsonlog"
 
-	"github.com/trackit/trackit/aws/usageReports"
-	"github.com/trackit/trackit/aws/usageReports/lambda"
+	"github.com/asifbg-systems/trackit/aws/usageReports"
+	"github.com/asifbg-systems/trackit/aws/usageReports/lambda"
 )
 
 type (
