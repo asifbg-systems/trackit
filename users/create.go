@@ -185,9 +185,8 @@ func createViewerUser(request *http.Request, a routes.Arguments) (int, interface
 	currentUser := a[AuthenticatedUser].(User)
 	tx := a[db.Transaction].(*sql.Tx)
 	ctx := request.Context()
-	//token := uuid.NewV1()
-	u,_ := uuid.NewV1()
-	token = u.String()
+	token := uuid.NewV1().String()
+
 	logger := jsonlog.LoggerFromContextOrDefault(ctx)
 	tokenHash, err := getPasswordHash(token)
 	if err != nil {
