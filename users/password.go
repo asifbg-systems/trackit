@@ -113,7 +113,11 @@ func forgottenPasswordWithValidBody(request *http.Request, body forgottenPasswor
 
 func createForgottenPasswordEntry(request *http.Request, body forgottenPasswordRequestBody, tx *sql.Tx, user User) (int, interface{}) {
 	logger := jsonlog.LoggerFromContextOrDefault(request.Context())
-	token := uuid.NewV1().String()
+
+
+
+	u,_ := uuid.NewV1()
+	token := u.String()
 
 	tokenHash, err := getPasswordHash(token)
 	if err != nil {
