@@ -78,12 +78,12 @@ var (
 
 func SimplifyCostsDocument(ctx context.Context, sr *elastic.SearchResult) (SimplifiedCostsDocument, error) {
 	var scdz SimplifiedCostsDocument
+	sr.
 	if len(sr.Aggregations) == 1 {
 		for k, v := range sr.Aggregations {
 			if v != nil {
-			//	return simplifyCostsDocumentWithSingleAggregation(ctx, k, *sr.Aggregations[k])
-			//bg 
-			return 0, false
+				return simplifyCostsDocumentWithSingleAggregation(ctx, k, sr.Aggregations)
+
 			}
 		}
 	}
