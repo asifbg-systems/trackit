@@ -33,7 +33,9 @@ func (ri RequestId) Decorate(h Handler) Handler {
 // getFunc builds the handler function for RequestId.Decorate
 func (_ RequestId) getFunc(hf HandlerFunc) HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request, a Arguments) (int, interface{}) {
-		requestId := uuid.NewV1().String()
+		//requestId := uuid.NewV1().String()
+		u,_ := uuid.NewV1()
+		requestId = u.String()
 		r = requestWithLoggedContextValue(r, contextKeyRequestId, "requestId", requestId)
 		w.Header()["X-Request-ID"] = []string{requestId}
 		return hf(w, r, a)
