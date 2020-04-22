@@ -233,7 +233,7 @@ func productGetAnomaliesData(ctx context.Context, params AnomalyEsQueryParams) (
 		return nil, err
 	}
 	var typedDocument esProductTypedResult
-	if err := json.Unmarshal(*sr.Aggregations["products"], &typedDocument.Products); err != nil {
+	if err := json.Unmarshal(sr.Aggregations["products"], &typedDocument.Products); err != nil {
 		logger.Error("Failed to parse elasticsearch document.", err.Error())
 		return nil, err
 	}
