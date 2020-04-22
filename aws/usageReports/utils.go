@@ -160,8 +160,8 @@ func CheckMonthlyReportExists(ctx context.Context, date time.Time, aa taws.AwsAc
 	query = query.Filter(elastic.NewTermQuery("account", aa.AwsIdentity))
 	query = query.Filter(elastic.NewTermQuery("reportDate", date))
 	index := es.IndexNameForUserId(aa.UserId, prefix)
-	//result,err := es.Client.Search().Index(index).Size(1).Query(query).Do(ctx)
-	err := es.Client.Search().Index(index).Size(1).Query(query).Do(ctx)
+	result,err := es.Client.Search().Index(index).Size(1).Query(query).Do(ctx)
+	//err := es.Client.Search().Index(index).Size(1).Query(query).Do(ctx)
 	if err != nil {
 		if elastic.IsNotFound(err) {
 			logger.Warning("Query execution failed, ES index does not exists", map[string]interface{}{"index": index, "error": err.Error()})
@@ -176,10 +176,10 @@ func CheckMonthlyReportExists(ctx context.Context, date time.Time, aa taws.AwsAc
 		}
 		return false, err
 	}
-//	if result.Hits.TotalHits == 0 {
-//		return false, nil
-//	} else {
+	if result.Hits == 0 {
+		return false, nil
+	} else {
 //bg
 		return true, nil
-//	}
+	}
 }
