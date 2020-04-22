@@ -119,7 +119,7 @@ func parseBuckets(buckets BucketsInfo, parsedDocument bucket, resultType string)
 func parseESResult(ctx context.Context, buckets BucketsInfo, res *elastic.SearchResult, resultType string) (BucketsInfo, error) {
 	var logger = jsonlog.LoggerFromContextOrDefault(ctx)
 	var parsedDocument bucket
-	err := json.Unmarshal(*res.Aggregations["buckets"], &parsedDocument)
+	err := json.Unmarshal(res.Aggregations["buckets"], &parsedDocument)
 	if err != nil {
 		logger.Error("Failed to parse elasticsearch document.", err.Error())
 		return buckets, errors.GetErrorMessage(ctx, err)

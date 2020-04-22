@@ -175,9 +175,10 @@ func CheckMonthlyReportExists(ctx context.Context, date time.Time, aa taws.AwsAc
 		}
 		return false, err
 	}
-	if result.Hits.TotalHits == 0 {
-		return false, nil
-	} else {
+//	if result.Hits.TotalHits == 0 {
+//		return false, nil
+//	} else {
+//bg
 		return true, nil
-	}
+//	}
 }

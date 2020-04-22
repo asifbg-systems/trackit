@@ -46,7 +46,7 @@ func parseESResult(ctx context.Context, res *elastic.SearchResult) ([]interface{
 	logger := jsonlog.LoggerFromContextOrDefault(ctx)
 	reports := make([]interface{}, 0)
 	var parsedTopReports bucket
-	err := json.Unmarshal(*res.Aggregations["top_plugins_account"], &parsedTopReports)
+	err := json.Unmarshal(res.Aggregations["top_plugins_account"], &parsedTopReports)
 	if err != nil {
 		logger.Error("Failed to parse elasticsearch document.", err.Error())
 		return reports, err

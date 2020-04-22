@@ -56,7 +56,7 @@ func GetTagsKeysWithParsedParams(ctx context.Context, params TagsKeysQueryParams
 		}
 		return returnCode, nil, errors.GetErrorMessage(ctx, err)
 	}
-	err = json.Unmarshal(*res.Aggregations["data"], &typedDocument)
+	err = json.Unmarshal(res.Aggregations["data"], &typedDocument)
 	if err != nil {
 		l.Error("Error while unmarshaling", err)
 		return http.StatusInternalServerError, nil, errors.GetErrorMessage(ctx, err)
