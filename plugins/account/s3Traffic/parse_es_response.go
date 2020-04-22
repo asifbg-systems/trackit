@@ -43,7 +43,7 @@ func parseESResult(pluginParams core.PluginParams, res *elastic.SearchResult) (b
 	var logger = jsonlog.LoggerFromContextOrDefault(pluginParams.Context)
 	var parsedDocument bucket
 	bandwidthInfos := bucketsInfos{}
-	err := json.Unmarshal(*res.Aggregations["buckets"], &parsedDocument)
+	err := json.Unmarshal(res.Aggregations["buckets"], &parsedDocument)
 	if err != nil {
 		logger.Error("S3 traffic failed to parse elasticsearch document.", err.Error())
 		return bandwidthInfos, err

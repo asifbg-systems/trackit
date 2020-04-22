@@ -84,7 +84,7 @@ func getInstanceCountHours(ctx context.Context, res ResponseInstanceCountMonthly
 func formatResultInstanceCount(ctx context.Context, res *elastic.SearchResult, aa taws.AwsAccount, startDate time.Time) []InstanceCountReport {
 	logger := jsonlog.LoggerFromContextOrDefault(ctx)
 	var response ResponseInstanceCountMonthly
-	err := json.Unmarshal(*res.Aggregations["region"], &response.Region)
+	err := json.Unmarshal(res.Aggregations["region"], &response.Region)
 	if err != nil {
 		logger.Error("Failed to parse JSON Instance Count document.", err.Error())
 	}
