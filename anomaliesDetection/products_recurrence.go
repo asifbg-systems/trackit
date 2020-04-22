@@ -130,8 +130,8 @@ func getAnomaliesFromEs(ctx context.Context, params AnomalyEsQueryParams) (esPro
 		"account": params.Account,
 		"amount":  sr.Hits.TotalHits,
 	})
-	typedDocuments := make(esProductAnomaliesWithId, sr.Hits.TotalHits)
-	for i, h := range sr.Hits.Hits {
+	typedDocuments := make(esProductAnomaliesWithId, sr.Hits)
+	for i, h := range sr.Hits.TotalHits {
 		typedDocuments[i].Id = h.Id
 		if b, err := h.Source.MarshalJSON(); err != nil {
 		} else if err := json.Unmarshal(b, &typedDocuments[i].Source); err != nil {
