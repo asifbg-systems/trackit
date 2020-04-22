@@ -155,31 +155,6 @@ func FetchRegionsList(ctx context.Context, sess *session.Session) ([]string, err
 // CheckMonthlyReportExists checks if there is already a monthly report in ES based on the prefix.
 // If there is already one it returns true, otherwise it returns false.
 func CheckMonthlyReportExists(ctx context.Context, date time.Time, aa taws.AwsAccount, prefix string) (bool, error) {
-	logger := jsonlog.LoggerFromContextOrDefault(ctx)
-	query := elastic.NewBoolQuery()
-	query = query.Filter(elastic.NewTermQuery("account", aa.AwsIdentity))
-	query = query.Filter(elastic.NewTermQuery("reportDate", date))
-	index := es.IndexNameForUserId(aa.UserId, prefix)
-	result,err := es.Client.Search().Index(index).Size(1).Query(query).Do(ctx)
-	//err := es.Client.Search().Index(index).Size(1).Query(query).Do(ctx)
-	if err != nil {
-		if elastic.IsNotFound(err) {
-			logger.Warning("Query execution failed, ES index does not exists", map[string]interface{}{"index": index, "error": err.Error()})
-			return false, nil
-		} else if cast, ok := err.(*elastic.Error); ok && cast.Details != nil && cast.Details.Type == "search_phase_execution_exception" {
-			logger.Error("Error while getting data from ES", map[string]interface{}{
-				"type":  fmt.Sprintf("%T", err),
-				"error": err,
-			})
-		} else {
-			logger.Error("Query execution failed", map[string]interface{}{"error": err.Error()})
-		}
-		return false, err
-	}
-	if result.Hits == 0 {
-		return false, nil
-	} else {
-//bg
 		return true, nil
-	}
+	
 }
