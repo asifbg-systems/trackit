@@ -106,7 +106,7 @@ func parseDiffUsageTypes(parsedDocument usageType) costDiff {
 func prepareDiffData(ctx context.Context, sr *elastic.SearchResult) (costDiff, error) {
 	var logger = jsonlog.LoggerFromContextOrDefault(ctx)
 	var parsedDocument usageType
-	err := json.Unmarshal(*sr.Aggregations["usageType"], &parsedDocument)
+	err := json.Unmarshal(sr.Aggregations["usageType"], &parsedDocument)
 	if err != nil {
 		logger.Error("Failed to parse elasticsearch document.", err.Error())
 		return costDiff{}, errors.GetErrorMessage(ctx, err)
