@@ -112,7 +112,9 @@ const ingestionContextKey = contextKey(iota)
 // contextWithIngestionId returns a context configured so that its logger logs
 // an 'ingestionId'.
 func contextWithIngestionId(ctx context.Context) context.Context {
-	ingestionId := uuid.NewV1().String()
+//	ingestionId := uuid.NewV1().String()
+	u,_ := uuid.NewV1()
+	ingestionId:= u.String()
 	ctx = context.WithValue(ctx, ingestionContextKey, ingestionId)
 	logger := jsonlog.LoggerFromContextOrDefault(ctx)
 	logger = logger.WithContextKey(ingestionContextKey, "ingestionId")
