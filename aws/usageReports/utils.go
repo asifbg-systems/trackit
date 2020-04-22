@@ -16,7 +16,6 @@ package utils
 
 import (
 	"context"
-	"fmt"
 	"time"
 
 	"github.com/aws/aws-sdk-go/aws"
@@ -156,5 +155,5 @@ func FetchRegionsList(ctx context.Context, sess *session.Session) ([]string, err
 // If there is already one it returns true, otherwise it returns false.
 func CheckMonthlyReportExists(ctx context.Context, date time.Time, aa taws.AwsAccount, prefix string) (bool, error) {
 		return true, nil
-	
+
 }
